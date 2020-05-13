@@ -1,0 +1,73 @@
+﻿@{ 
+    int ArticleCount =(int)ViewData["Articles"];
+    int UserCount = (int)ViewData["Users"];
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>简约是一种生活态度</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link href="~/Content/css/oksub.css" rel="stylesheet" />
+</head>
+<body class="ok-body-scroll console">
+    <div class="ok-body home">
+        <div class="layui-row layui-col-space15">
+
+            <div class="layui-col-xs6 layui-col-md6">
+                <div class="layui-card">
+                    <div class="ok-card-body">
+                        <div class="img-box" ok-pc-in-show>
+                            <img src="~/Content/images/home-03.png" alt="none"  />
+                        </div>
+                        <div class="cart-r">
+                            <div class="stat-text blogs-num">@ArticleCount</div>
+                            <div class="stat-heading">文章</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layui-col-xs6 layui-col-md6">
+                <div class="layui-card">
+                    <div class="ok-card-body">
+                        <div class="img-box" ok-pc-in-show>
+                            <img src="~/Content/images/home-04.png" alt="none"  />
+                        </div>
+                        <div class="cart-r">
+                            <div class="stat-text fans-num">@UserCount</div>
+                            <div class="stat-heading">用户</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="~/Content/lib/layui/layui.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
