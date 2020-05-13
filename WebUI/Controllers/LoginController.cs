@@ -10,6 +10,7 @@ namespace WebUI.Controllers
     public class LoginController : Controller
     {
         // GET: User
+        //我的第一个MVC项目
         public ActionResult Index()
         {
             return View();
